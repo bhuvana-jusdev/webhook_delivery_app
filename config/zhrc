@@ -1,0 +1,129 @@
+# HISTSIZE=10000000
+# SAVEHIST=10000000
+# setopt hist_ignore_all_dups
+
+# # LMS.
+# export DATABASE_URL='postgresql://@127.0.0.1/lms_development'
+# export DATABASE_TEST_URL='postgresql://@127.0.0.1/lms_test'
+# export ALLOWED_NETWORK='0.0.0.0/0'
+# export RAILS_MASTER_KEY='30e12626d9cbe09ae289e087daf29aa6'
+# export WORKFLOW_DATABASE_URL='postgresql://@127.0.0.1/workflow_engine_development'
+# export WORKFLOW_EDITOR_URL="http://localhost:8080"
+# export LMS_BASE_URL="http://ibsdev-so.local.yabx.co:3000"
+# export WORKFLOW_URL="http://workflow.yabx.co:3001"
+# # export WORKFLOW_URL="https://cashews-tz.yabx.co"
+# # export RAILS_MASTER_KEY=82ff768dc8d9812a0cc7fec50d3fe238 # WORKFLOW ENGINE
+# export LEADGENS_REDIRECT_URL="https://juanchotepresta.com/?utm_source=Yabx&utm_medium=Afiliado&utm_campaign=Yabx_SMS_1"
+# export LMS_PARTNER_CODE="ibsdev_so"
+# export LMS_CLIENT_SECRET="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXJ0bmVyX2NvZGUiOiJpYnNkZXZfc28iLCJvcyI6IndlYl9hcHBsaWNhdGlvbiIsInBhY2thZ2VfaWQiOiJjY2EwMjZkODZlNjdjZjI2IiwiY2xpZW50X2tleSI6Ijc1MDAwN2FmLTU3YTMtNGVhZC1hYjFhLWQ5ZmIzZjEyZmIwNCJ9.Y28QpuJC7uHYN_1T9BMmH-01n9G1ukDetDeW93M88sA"
+# export ACTIVE_PRODUCT="ProductSimpleSaving,ProductLockSaving,ProductBulletLoan,ProductCreditLineCheckout,ProductHandset,ProductInstallment,ProductLeadGen"
+# export ALLOWED_AUTODEBIT_PRODUCTS="ProductBulletLoan,ProductMerchantCashAdvance,ProductCreditLineLoan,ProductInstallment,ProductCreditLineCheckout,ProductInstallment"
+# export IS_PROD="false"
+# export LMS_PACKAGE_ID="cca026d86e67cf26"
+# export LMS_TOKEN_OS="web_application"
+# export LMS_EXTERNAL_PORTALS="retailer,workflow,kyc"
+# # Staging
+# # export CREDIT_INFO_BUREAU_API_USERNAME="y9bank"
+# # export CREDIT_INFO_BUREAU_API_PASSWORD="Heslo321"
+# # export CREDIT_INFO_BUREAU_STRATEGY_ID="12f5a0e0-a208-4c11-87c4-12eb4cf9ec68"
+# # export CREDIT_INFO_BUREAU_URL="https://idm-stage.creditinfo.co.tz/MultiConnector.svc?singleWsdl"
+# # Production
+# export CREDIT_INFO_BUREAU_API_USERNAME="idm.y9"
+# export CREDIT_INFO_BUREAU_API_PASSWORD="Y9122022"
+# export CREDIT_INFO_BUREAU_STRATEGY_ID="26e5247c-c513-48cc-b713-64b74a0235f4"
+# export CREDIT_INFO_BUREAU_URL="https://idm.creditinfo.co.tz/MultiConnector.svc?singleWsdl"
+# # export MONGO_URL='mongodb://localhost:27017/connect_uat_dev'
+# # export DEFAULT_URL_OPTION_HOST='http://furaha-ug.local.yabx.co:3000'
+# export DEFAULT_URL_OPTION_HOST='http://ibsdev-so.local.yabx.co:3000'
+# export DEFAULT_TEST_URL_OPTION_HOST='http://yabxtest-in.local.yabx.co'
+# export SMTP_ADDRESS="smtppro.zoho.in"
+# export SMTP_PORT="465"
+# export SMTP_USER_NAME="y9microfinance@y9bank.tz"
+# export SMTP_PASSWORD="y9Bank@e2024"
+# export SMTP_FROM_ADDRESS="y9microfinance@y9bank.tz"
+# export SMTP_DOMAIN="zoho.in"
+# export SMTP_AUTHENTICATION_METHOD="login"
+# export SMTP_SSL="true"
+
+# #Common handy shorcodes.
+# alias c='clear'
+# alias l='ls'
+# alias ..='cd ..'
+# alias e='code .'
+# alias vs='code .'
+# alias ms='mysql.server start'
+# alias o='open .'
+# alias b='bundle install'
+# alias k='kill -9'
+# # alias eb='code ~/.zshrc'
+# alias sb="source ~/.zshrc"
+# alias is="ps aux | grep"
+# alias isp="lsof -i"
+# alias nano="sudo nano"
+# alias pm="sudo /usr/local/bin/passenger-memory-stats"
+
+# #GIT Shortcuts.
+# alias gs='git status'
+# alias ga='git add .'
+# alias gr='git reset'
+# alias gc='git commit -m'
+# alias push='git push origin'
+# alias live='git push live master'
+# alias pull='git pull origin'
+# alias gsh='git stash'
+# alias gco='git checkout'
+# alias grb='git rebase'
+# alias gf='git fetch'
+# alias gb='git branch'
+# alias gca='git add . -A && git commit -m'
+# alias gd='git diff'
+# alias gm='git commit --amend'
+
+# #Rails Commands.
+# alias rs="rails s"
+# alias rsb="rails server -b 0.0.0.0"
+# alias rr="rails routes"
+# alias rb="bundle install"
+# alias rdb="rails db:migrate"
+# alias rc="rails c"
+# alias dpro='cap production deploy'
+# alias ddev='cap development deploy'
+
+# function git_statuses {
+#   local git_status="$(git status 2> /dev/null)"
+
+#   if [[ $git_status == *"Changes to be committed"* ]]; then
+#     echo -e "%F{blue} ➜%f"
+#   elif [[ $git_status == *"Changes not staged for commit"* ]]; then
+#     echo -e "%F{red} ✎%f"
+#   elif [[ $git_status == *"nothing to commit"* ]]; then
+#     echo -e "%F{green} ⚤%f"
+#   elif [[ $git_status == *"working directory clean"* ]]; then
+#     echo -e "%F{green} ⚤%f"
+#   elif [[ $git_status == *"Your branch is ahead of"* ]]; then
+#     echo -e "%F{yellow} ☢%f"
+#   else
+#     echo -e ""
+#   fi
+
+# }
+
+# parse_git_branch() {
+#   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ ➤ git:\1/'
+# }
+
+# # Use Prompt if your default shell is ZSH.
+# set_prompt () {
+#   PROMPT="%F{green}%n%f%F{white}@%m:%f%F{blue}%.%f%F{magenta}$(parse_git_branch)%f$(git_statuses) %F{green}❯❯❯%f "
+# }
+# set_prompt
+
+# precmd() {
+#   set_prompt
+# }
+
+# # Set PATH, MANPATH, etc., for Homebrew.
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
