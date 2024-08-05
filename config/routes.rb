@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   post '/get_csrf_token', to: 'auth_helpers#get_csrf_token'
 
-  resources :products, only: [:new, :create, :update]
+  resources :products, only: [:create, :update]
 
   post '/connect_one', to: 'third_party#connect_one'
   post '/connect_two', to: 'third_party#connect_two'

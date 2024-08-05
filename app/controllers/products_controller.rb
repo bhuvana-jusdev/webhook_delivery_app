@@ -1,10 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:update]
 
-  def new
-    @product = Product.new
-  end
-
   def create
     @product = Product.new(product_params)
 
